@@ -35,12 +35,14 @@ For example, a file located at assets/javascripts/templates named example.handle
 The gem also supports nesting within the template folder, the key for these files will be the relative path joined by underscors, "_". For example, a file located at assets/javascripts/templates/test named file.handlejs will be accessible in Handlebars.TEMPLATES["test_file"] and in Handlebars.TEMPLATES.test_file.  
 
 A simple handlebars file example. 
+    
     <div class='handlejs test'>
         {{title}}
         <div class='container'>
-        	{{contained}}
-    	</div>
+            {{contained}}
+        </div>
     </div>
+
 More of handlebars in [their github](https://github.com/wycats/handlebars.js)
 
 
