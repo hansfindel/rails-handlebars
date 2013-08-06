@@ -28,9 +28,9 @@ in your application.js file as is the default in rails, it will load the file an
 
 ## Usage
 
-By default the gem will load all the files with the .handlejs or .js.handlejs within the javascripts/templates folder. These files will be accessible in the Handlebars.TEMPLATES variable. Within this variable you can access your templates appending the name of the file or passing it as a key. 
+By default the gem will load all the files with the .handlejs or .js.handlejs or simply .hbjs within the javascripts/templates folder. These files will be accessible in the Handlebars.TEMPLATES variable. Within this variable you can access your templates appending the name of the file or passing it as a key. 
 
-For example, a file located at assets/javascripts/templates named example.handlejs will be accessible in Handlebars.TEMPLATES["example"] and in Handlebars.TEMPLATES.example 
+For example, a file located at assets/javascripts/templates named example.handlejs will be accessible in Handlebars.TEMPLATES["example"] and in Handlebars.TEMPLATES.example. 
 
 The gem also supports nesting within the template folder, the key for these files will be the relative path joined by underscors, "_". For example, a file located at assets/javascripts/templates/test named file.handlejs will be accessible in Handlebars.TEMPLATES["test_file"] and in Handlebars.TEMPLATES.test_file.  
 
@@ -43,7 +43,7 @@ A simple handlebars file example.
         </div>
     </div>
 
-More of handlebars in [their github](https://github.com/wycats/handlebars.js)
+More of handlebars in [their github](https://github.com/wycats/handlebars.js) and/or in [http://handlebarsjs.com/](http://handlebarsjs.com/) 
 
 
 ## Contributing

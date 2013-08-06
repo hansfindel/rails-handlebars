@@ -11,7 +11,7 @@ module Rails
       def prepare
       end
 
-      # Generates Javascript code from a HandlebarsJS template.
+      # Generates Javascript code (modifies the Handlebars variable) from a HandlebarsJS template.
       def evaluate(scope, locals, &block)        
         template = data.dup
         template.gsub!(/"/, '\\"')
@@ -19,8 +19,10 @@ module Rails
         template.gsub!(/\t/, ' ')
         # files logical path are like /templates/[folder_name\/]? file_name 
         # take out templates, join the rest by undescore and remove the extension name 
-        route = scope.logical_path.split("/")[1..-1].join("_").gsub(".js", "") 
-        jsfunction = "if(Handlebars.TEMPLATES == null){Handlebars.TEMPLATES={};}"
+        #route = scope.logical_path.split("/")[1..-1].join("_").gsub(".js", "") 
+        route = scope.logical_path.gsub(/template(s)?/i, "").gsub("/", "_").gsub(".js", "") 
+        jsfunction = "if(Handlebars == null){Handlebars={};}"
+        jsfunction += "if(Handlebars.TEMPLATES == null){Handlebars.TEMPLATES={};}"
         jsfunction += "Handlebars.TEMPLATES[\"#{route}\"] = \"#{template}\";\n "
       end
 
