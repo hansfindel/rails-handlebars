@@ -14,6 +14,8 @@ module Rails
       config.before_initialize do |app|
         Sprockets::Engines #force autoloading
         Sprockets.register_engine '.handlejs', Rails::Handlebars::Template
+        Sprockets.register_engine '.hbjs', Rails::Handlebars::Template 
+        #define some haml handlebars js... if defined? Tilt::HamlTemplate
       end
     end
   end

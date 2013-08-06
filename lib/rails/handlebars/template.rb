@@ -27,3 +27,5 @@ module Rails
     end
   end # handlebars module end 
 end # rails module end 
+
+# some configuration may be added...

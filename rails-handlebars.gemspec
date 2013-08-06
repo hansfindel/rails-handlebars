@@ -6,7 +6,7 @@ require 'rails/handlebars/version'
 Gem::Specification.new do |spec|
   spec.name          = "rails-handlebars"
   spec.version       = Rails::Handlebars::VERSION
-  spec.authors       = ["Hans"]
+  spec.authors       = ["Hans Findel"]
   spec.email         = ["hanstrax@gmail.com"]
   spec.description   = %q{Handle handlebars templates with the asset pipeline}
   spec.summary       = %q{Handle handlebars templates with the asset pipeline}
