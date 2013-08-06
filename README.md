@@ -23,7 +23,9 @@ And remember to load the handlebars.js file in your project.
 If you do not have a copy of it, download it from [http://handlebarsjs.com/](http://handlebarsjs.com/) and add it to your assets. (It is recommmended to add this in your vendor/assets/javascripts folder since it will be mantained by other people)
 
 If you are using 
+
     //= require_tree .
+
 in your application.js file as is the default in rails, it will load the file and you don't have to worry. If you change that, remember to load the handlebars.js file when needed. 
 
 ## Usage
