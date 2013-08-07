@@ -1,6 +1,6 @@
 # Rails::Handlebars
 
-Rails-Handlebars handles all your Handlebars precompilation needs. 
+The rails-andlebars gem handles all your Handlebars precompilation needs. It lets you add your templates in your asset pipeline and to make it easy to mantain a large ammount of templates in order and with a naming pattern. 
 
 ## Installation
 
@@ -20,13 +20,12 @@ Or install it yourself as:
 
 And remember to load the handlebars.js file in your project. 
 
-If you do not have a copy of it, download it from [http://handlebarsjs.com/](http://handlebarsjs.com/) and add it to your assets. (It is recommmended to add this in your vendor/assets/javascripts folder since it will be mantained by other people)
+If you do not have a copy of it, download it from [http://handlebarsjs.com/](http://handlebarsjs.com/) and add it to your assets. 
 
-If you are using 
+It is recommmended to add this in your vendor/assets/javascripts folder since it will be mantained by other people. It may be necesary to add a reference to the handlebars.js file in your application.js file in order to load it. This can be accomplished by adding the following line at the beginning of the application.js file (after loading jQuery):
 
-    //= require_tree .
+    //= require_tree ../../../vendor/assets/javascripts/
 
-in your application.js file as is the default in rails, it will load the file and you don't have to worry. If you change that, remember to load the handlebars.js file when needed. 
 
 ## Usage
 
