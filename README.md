@@ -1,6 +1,6 @@
 # Rails::Handlebars
 
-The rails-andlebars gem handles all your Handlebars precompilation needs. It lets you add your templates in your asset pipeline and to make it easy to mantain a large ammount of templates in order and with a naming pattern. 
+The rails-andlebars gem handles all your Handlebars precompilation needs. It lets you add your templates in your asset pipeline and to make it easy to mantain a large ammount of templates in order with an easy naming pattern. 
 
 ## Installation
 
